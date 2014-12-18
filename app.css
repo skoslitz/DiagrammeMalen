@@ -1,15 +1,16 @@
 .node {
-	fill:#eaeaea;
-	stroke:#666;
+	fill:none;
+	stroke:#eee;
 	stroke-width:2px;
 }
 .label {
 	font-size: 21px;
-	font-weight: normal;
-  color: Crimson;
+	line-height: 1.5;
+	font-weight: bold;
+  	color: Crimson;
 }
 .edgeLabels {
 	font-size: 14px;
 	font-weight: normal;
-  color: Crimson;
+  	color: Crimson;
 }
