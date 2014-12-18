@@ -1,15 +1,31 @@
 <html>
 <head>
 	<title>Diagramme :: malen</title>
-	<script src="public/lib/mermaid/dist/mermaid.full.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="public/lib/bootstrap-css-only/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="app.css">
 </head>
 <body>
-	<div class="mermaid">
-    graph TD;
-    A[Hard edge]-->|Link text|B(Round edge);
-    B-->C{Decision};
-    C-->|One|D[Result one];
-    C-->|Two|E[Result two];
+	<div class="container text-center">
+		<h1>Ablaufplan LiD-Online</h1>
+
+  <div class="mermaid">
+  	graph TD
+    A(LiD-Redaktion)---B0
+    A1(VK) --- B0
+    B0(Text, Bilder, Videos, Karten, JavaScript basierende Anwendungen) --- B
+    B((Content))---BB
+    B1(Shortcodes, Front Matter) --- BB
+    BB(Organisierter Content) --- D
+    C(Templates)---D
+		C1(Themes) --- D
+		D(Entwurf) --> E[Schlussredaktion, Abnahme, Tests]
+		E --- G(Auslieferung)
+		E --> D
+		G --- H(Produktiver Einsatz)
+
+  </div>
 </div>
+
+<script src="public/lib/mermaid/dist/mermaid.full.min.js"></script>
 </body>
 </html>

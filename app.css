@@ -1,0 +1,15 @@
+.node {
+	fill:#eaeaea;
+	stroke:#666;
+	stroke-width:2px;
+}
+.label {
+	font-size: 21px;
+	font-weight: normal;
+  color: Crimson;
+}
+.edgeLabels {
+	font-size: 14px;
+	font-weight: normal;
+  color: Crimson;
+}
